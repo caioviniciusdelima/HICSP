@@ -1,0 +1,89 @@
+version: "3.8"
+
+services:
+  jupyter-service: 
+    build: 
+      context: ./jupyter_server
+      dockerfile: Dockerfile
+    container_name: jupyter-datascience
+    restart: always
+    environment: 
+      - JUPYTER_TOKEN=password
+    volumes:
+      - /home/wesley/DSEnvironment/jupyter_vol:/home/work
+    ports:
+      - "8888:8888"
+    networks:
+      - postgresDB-network
+      
+  rstudio-service:
+    build: 
+      context: ./rstudio_server
+      dockerfile: Dockerfile
+    container_name: rstudio-datascience
+    restart: always
+    environment:
+      - PASSWORD=password
+    ports: 
+      - "8787:8787"
+    volumes:
+      - /home/wesley/DSEnvironment/rstudio_vol:/home/rstudio
+    networks:
+      - postgresDB-network
+
+  postgresDB:
+    image: postgres
+    container_name: pg_container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: postgres
+    ports:
+      - "15432:5432"
+    volumes:
+      - /home/wesley/DSEnvironment/postgres_vol:/var/lib/postgresql/data
+    networks:
+      - postgresDB-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: seu_email@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    volumes:
+      - /home/wesley/DSEnvironment/postgres_vol:/var/lib/pgadmin
+    working_dir: /pgadmin
+    depends_on:
+      - postgresDB
+    networks:
+      - postgresDB-network
+
+  mongo:
+    image: mongo
+    container_name: mongo_container
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - /home/wesley/DSEnvironment/mongodb_vol:/ect/mongo
+
+  mongo-express:
+    image: mongo-express
+    container_name: express_container
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/ 
+
+networks:
+  postgresDB-network:
+    driver: bridge
