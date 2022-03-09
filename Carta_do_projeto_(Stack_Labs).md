@@ -57,9 +57,9 @@ Fases (marcos), cronograma, breve descrição do que faremos em cada fase.
 
 * Como manteremos contato? Reuniões diárias,semanais, sprints?
 
-- Contato diário via Discord pelo canl *dask-chat*;
-- Reuniões semanais por meio de sala do google meet;
-- Contato por email;
-- Trello.
+1. Contato diário via Discord pelo canl *dask-chat*;
+2. Reuniões semanais por meio de sala do google meet;
+3. Contato por email;
+4. Trello.
 
 
