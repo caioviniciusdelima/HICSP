@@ -3,6 +3,7 @@
 ## Entendimento do negócio
 
 * Qual domínio de negócios o desafio está?
+  
 * Que problemas de negócios estamos tentando resolver?
 
 ## Escopo
@@ -10,6 +11,8 @@
 * Quais soluções de Ciência/Análise de dados estamos tentando construir?
 * O que faremos?
 * Como será consumido pelo cliente?
+  
+  Este trabalho será consumido pelo cliente por meio de daus aplicações. Um dasboard com os insights obtidos por meio da base dados e outra aplicação com as especificações do modelo 
 
 ## Pessoas
 
