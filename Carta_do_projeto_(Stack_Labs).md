@@ -17,7 +17,7 @@ Nosso cliente é uma seguradora que forneceu Seguro de Saúde aos seus clientes 
 Iremos construir uma ferramenta de predição utilizando um aplicativo que rodará em nuvem. Esta solução irá utilizar os dados de nossa seguradora cliente que trabalha atualmente com seguros de saúde e deseja ampliar seu portfólio para seguros de veículos.
  Nossa ferramenta usará o que há de mais moderno em algoritmos de predição e ferramentas de processamento em nuvem. Com o uso destas ferramentas combinadas entregaremos a melhor solução de predição. As ferramentas usadas serão as seguintes :
 
-![](RackMultipart20220310-4-18yitvt_html_dff8f1846f8503eb.png)
+![Ferramentas disponíveis](https://github.com/sdncmndll/HICSP/blob/engineering/img/ferramentas.png)
 
 - Github
 - Postgree
@@ -113,7 +113,7 @@ Semana 5 - 04/04/2022 a 05/04/2022
 
 ## ## Arquitetura
 
-![](RackMultipart20220310-4-18yitvt_html_98d4ef37b825ae85.png)
+![Arquitetura Visão 1](https://github.com/sdncmndll/HICSP/blob/engineering/img/arquitetura1.png)
 
 Visão 0
 
@@ -155,7 +155,7 @@ _ **Avaliar se temos um ambiente na AWS** _
 
 Iremos trabalhar como um time usando o método SCRUM
 
-![](RackMultipart20220310-4-18yitvt_html_3d7a9ea58e41d86b.png)
+![Scrum](https://github.com/sdncmndll/HICSP/blob/engineering/img/scrum.png)
 
 [Metodologia Scrum: etapas do gerenciamento de projetos ágeis (take.net)](https://www.take.net/blog/chatbots/metodologia-scrum/)
 
