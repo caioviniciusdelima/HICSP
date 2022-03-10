@@ -39,3 +39,7 @@ Este projeto aborda uma solução de ciência de dados completa, simulando todas
   ```
 - No seu repositório do github faça o Compare & Pull Request;
 - O Pull Request ficará pendende até que o propietário do repositório aceite suas modificicações. 
+- OBS: Cada vez que você for começar a trabalhar é extremamente importante fazer o download das atualizações que ocorreram no projeto;
+  ```console
+  git pull
+  ```
