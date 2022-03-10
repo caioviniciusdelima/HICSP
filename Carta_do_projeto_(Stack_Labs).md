@@ -155,7 +155,7 @@ _ **Avaliar se temos um ambiente na AWS** _
 
 Iremos trabalhar como um time usando o método SCRUM
 
-![](RackMultipart20220310-4-18yitvt_html_3d7a9ea58e41d86b.png)
+![Scrum](https://github.com/sdncmndll/HICSP/blob/engineering/img/scrum.png)
 
 [Metodologia Scrum: etapas do gerenciamento de projetos ágeis (take.net)](https://www.take.net/blog/chatbots/metodologia-scrum/)
 
