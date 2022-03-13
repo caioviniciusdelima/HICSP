@@ -10,7 +10,7 @@ services:
     environment: 
       - JUPYTER_TOKEN=password
     volumes:
-      - /home/wesley/DSEnvironment/jupyter_vol:/home/work
+      - C:/DSEnvironment/jupyter_vol:/home/work
     ports:
       - "8888:8888"
     networks:
@@ -27,7 +27,7 @@ services:
     ports: 
       - "8787:8787"
     volumes:
-      - /home/wesley/DSEnvironment/rstudio_vol:/home/rstudio
+      - C:/DSEnvironment/rstudio_vol:/home/rstudio
     networks:
       - postgresDB-network
 
@@ -42,7 +42,7 @@ services:
     ports:
       - "15432:5432"
     volumes:
-      - /home/wesley/DSEnvironment/postgres_vol:/var/lib/postgresql/data
+      - C:/DSEnvironment/postgres_vol:/var/lib/postgresql/data
     networks:
       - postgresDB-network
 
@@ -56,7 +56,7 @@ services:
     ports:
       - "5050:80"
     volumes:
-      - /home/wesley/DSEnvironment/postgres_vol:/var/lib/pgadmin
+      - C:/DSEnvironment/postgres_vol:/var/lib/pgadmin
     working_dir: /pgadmin
     depends_on:
       - postgresDB
@@ -71,7 +71,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-      - /home/wesley/DSEnvironment/mongodb_vol:/ect/mongo
+      - C:/DSEnvironment/mongodb_vol:/ect/mongo
 
   mongo-express:
     image: mongo-express
