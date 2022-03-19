@@ -22,7 +22,7 @@
 ![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/cmdNaPasta.PNG)   
 
     Agora de o comando >git clone https://github.com/WesleyJw/HICSP do projeto
-![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/cmdNaPasta.PNG)
+![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/clonarViaCmd.PNG)
 
 
 ##Usando o branch------------------------------------------------------------------------------------------
