@@ -59,6 +59,16 @@
     Você está com as alterações sincronizadas com o github
     
     Como fazer para as alterações passarem para a main ?
+    Esta solicitação será feita através do pull request
+    
+
+    Solicitar o Pull Request
+![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest.PNG "Solicitar Pull Request")
+
+![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest1.PNG "Solicitar Pull Request")
+
+![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest3.PNG "Solicitar Pull Request")
+    
     
     
     
