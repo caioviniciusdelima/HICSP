@@ -67,7 +67,11 @@
 
 ![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest1.PNG "Solicitar Pull Request")
 
+![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest2.PNG "Solicitar Pull Request")
+
 ![](https://github.com/WesleyJw/HICSP/blob/sidney/img/git/solicitarPullRequest3.PNG "Solicitar Pull Request")
+
+    A úlima etapa será colocar as alterações na main
     
     
     
