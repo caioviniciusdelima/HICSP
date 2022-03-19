@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  jupyter-service: 
+    build: 
+      context: ./jupyter_server
+      dockerfile: Dockerfile
+    container_name: jupyter-datascience
+    restart: always
+    environment: 
+      - JUPYTER_TOKEN=password
+    volumes:
+      - C:\Users\cmndl\ambiente_docker\jupyter_vol:/home/work
+    ports:
+      - "8888:8888"
+    networks:
+      - postgresDB-network
+      
+  postgresDB:
+    image: postgres
+    container_name: pg_container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: postgres
+    ports:
+      - "15432:5432"
+    volumes:
+      - C:\Users\cmndl\ambiente_docker\postgres_vol:/var/lib/postgresql/data
+    networks:
+      - postgresDB-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: seu_email@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgresDB
+    networks:
+      - postgresDB-network
+
+networks:
+  postgresDB-network:
+    driver: bridge
